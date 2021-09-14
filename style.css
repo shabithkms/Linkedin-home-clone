@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    flex: 1;
+    background-color: #f3f2ef;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: var(--artdeco-reset-typography-font-family-sans);
+}
+header{
+    padding: 7px;
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index:100;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    background-color: #fff;
+    display: flex;
+}
+.header_left{
+    
+    display: flex;
+    margin-left: -217px;
+}
+.header_right{
+    display: flex;
+    font-size: 25px;
+    
+    border-right-color: black;
+}
+.header_search{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+.logo{
+    margin-right: 10px;
+    padding-top: 3px;
+}
+.header_search input{
+    outline: none;
+    border: none;
+    background: none;
+    margin-left: 5px;
+}
+.headerOptions{
+    display: flex;
+    flex-direction:column; 
+    align-items: center;
+    margin-right: 20px;
+    color: rgb(102 102 102);
+    cursor: pointer;
+}
+.headerOptions :hover{
+    color: black;
+}
+.headerOptions h3{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.headerOptions_icon{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.profile_pic_header{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+
+/* Main Body */
+.body_main{
+    display: flex;
+    margin-top: 35px;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* SideBar */
+
+.sidebar{
+    position: sticky;
+    top: 80px;
+    flex: 0.2;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    flex-direction: column;
+}
+.sidebar_top img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+.profile_pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 0 5px;
+}
+.sidebar_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.avatar_icon{
+    font-size: 40px;
+}
+.sidebar_mid{
+    padding: 10px;
+    margin-bottom: 10px;
+    border:1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sidebar_stats{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar_stats p{
+    color: gray;
+    font-weight: 600;
+    font-size: 13px;
+}
+.sidebar_statNumber{
+    font-weight: bold;
+    color: #0a66c2 !important;
+}
+.sidebar_top h4{
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sidebar_top h2{
+    font-size: 16px;
+    padding-top: 2em;
+}
+.sidebar_bottom{
+    position: sticky;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.sidebar_recent{
+    display: flex;
+    font-weight: bolder;
+    cursor: pointer;
+    color: gray;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+.sidebar_recent :hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+}
+.sidebar_hash{
+    margin: 0 10px;
+}
+.sidebar_bottom p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+/* Feed Section */
+
+.feed{
+    flex: 0.6;
+    margin: 0 20px;
+    flex-direction: column;
+
+}
+.inputContainer{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.feed_inputTop{
+    display: flex;
+    padding: 10px 0;
+}
+.feed_input{
+    height: 25px;
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    padding: 10px;
+    color: gray;
+    padding-left: 15px; 
+    cursor: pointer;   
+}
+
+.feed_input_form{
+    color: rgb(0 0 0 / 60%);
+    display: flex;
+    width: 100%;
+}
+.feed_input_form input{
+    border: none;
+    flex: 1;
+    margin-left: 10px;
+    outline-width: 0;
+    font-weight: 600;
+}
+.feed_inputOptions{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.inputOptions{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+.inputOptions:hover{
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.inputOptions h4{
+    margin-left: 5px;
+}
+
+/* Post  */
+.post{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.postHeader{
+    display: flex;
+    padding-top: 10px;
+}
+.postHeader h2{
+    font-size: 18px;
+}
+.postHeader p{
+    font-size: 13px;
+}
+.crImage{
+    height: 400px;
+    width: 450px;
+}
+.profile_pic_cr{
+    height: 60px;
+    width: 60px;
+    padding: 0 5px;
+}
+.postFooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gray;
+    padding: 10px;
+    margin-top: 15px;
+}
+.footerOptions{
+    cursor: pointer;
+}
+.footerOptions:hover{
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+.postBody{
+    margin-top: 15px;
+    /* margin-left: 10px; */
+}
+.postInfo{
+    margin-left: 1px;
+    color: rgb(0 0 0 / 90%);
+}
+.postInfo p{
+    font-size: 12px;
+    color: gray;
+}
+.postInfo h2{
+    font-size: 15px;
+}
+/* News Section */
+
+.news{
+    /* position: sticky; */
+    top: 80px;
+    flex:1;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+.newsHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.newsHeader h2{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(0 0 0 / 90%);
+}
+.newsArticle{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+}
+.newsArticle:hover{
+    background-color: whitesmoke;
+
+}
+.articleLeft{
+    color: gray;
+    margin-right: 5px;
+    
+}
+.articleLeft{
+    font-size: 6px;
+    margin-top: 7px;
+
+}
+.articleRight{
+    flex: 1;
+}
+.articleRight h4{
+    font-size: 14px;
+}
+.articleRight p{
+    font-size: 12px;
+    color: gray;
+}
+.TodayTop{
+    position:sticky ;
+    margin-top: 10px;
+    top: 80px;
+    flex:1;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: fit-content;
+    padding-bottom: 10px;
+
+}
